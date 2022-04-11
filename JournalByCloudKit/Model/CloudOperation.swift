@@ -10,6 +10,7 @@ import Foundation
 enum CloudOperation: String, CustomStringConvertible {
     case query
     case save
+    case delete
     
     var description: String { rawValue }
 }

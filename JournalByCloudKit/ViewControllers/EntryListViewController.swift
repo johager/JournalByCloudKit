@@ -62,7 +62,6 @@ class EntryListViewController: UIViewController {
         
         destination.entry = entries[indexPath.row]
     }
-    
 }
 
 // MARK: - UITableViewDataSource
@@ -84,5 +83,21 @@ extension EntryListViewController: UITableViewDataSource {
         cell.contentConfiguration = config
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard editingStyle == .delete else { return }
+        
+        entryController.delete(entryAtIndex: indexPath.row) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let recordID):
+                    guard let _ = recordID else { return }
+                    self.tableView.reloadData()
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
     }
 }
