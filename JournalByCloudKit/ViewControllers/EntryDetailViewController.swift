@@ -44,7 +44,21 @@ class EntryDetailViewController: UIViewController {
         else { return }
         
         if let entry = entry {
-            print("\(#function) - update entry")
+            EntryController.shared.update(entry, title: title, text: text) { result in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .success(let recordID):
+                        guard let _ = recordID else {
+                            print("\(#function) - Error updating: no recordID returned")
+                            return
+                        }
+                        print("\(#function) - Update success")
+                    case .failure(let error):
+                        print(error)
+                        self.presentErrorAlert(for: error)
+                    }
+                }
+            }
         } else {
             EntryController.shared.create(title: title, text: text) { result in
                 DispatchQueue.main.async {

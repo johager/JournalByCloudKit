@@ -8,8 +8,9 @@
 import Foundation
 
 enum CloudOperation: String, CustomStringConvertible {
-    case query
     case save
+    case query
+    case update
     case delete
     
     var description: String { rawValue }

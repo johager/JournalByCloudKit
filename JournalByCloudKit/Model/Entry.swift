@@ -35,6 +35,11 @@ class Entry {
         else { return nil }
         self.init(title: title, text: text, timestamp: timestamp, ckRecordID: ckRecord.recordID)
     }
+    
+    func update(title: String, text: String) {
+        self.title = title
+        self.text = text
+    }
 }
 
 extension CKRecord {

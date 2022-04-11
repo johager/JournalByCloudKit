@@ -47,6 +47,7 @@ class EntryListViewController: UIViewController {
                     self.tableView.reloadData()
                 case .failure(let error):
                     print(error)
+                    self.presentErrorAlert(for: error)
                 }
             }
         }
@@ -96,6 +97,7 @@ extension EntryListViewController: UITableViewDataSource {
                     self.tableView.reloadData()
                 case .failure(let error):
                     print(error)
+                    self.presentErrorAlert(for: error)
                 }
             }
         }

@@ -20,6 +20,7 @@
 		F8D491402804D05A00DEF9C6 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4913F2804D05A00DEF9C6 /* EntryDetailViewController.swift */; };
 		F8D491432804D51C00DEF9C6 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D491422804D51C00DEF9C6 /* Date+.swift */; };
 		F8D491462804D6C900DEF9C6 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8D491452804D6C900DEF9C6 /* CloudKit.framework */; };
+		F8D491482804F12300DEF9C6 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D491472804F12300DEF9C6 /* UIViewController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		F8D4913F2804D05A00DEF9C6 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		F8D491422804D51C00DEF9C6 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		F8D491452804D6C900DEF9C6 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F8D491472804F12300DEF9C6 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				F8D491422804D51C00DEF9C6 /* Date+.swift */,
+				F8D491472804F12300DEF9C6 /* UIViewController+.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				F8D491432804D51C00DEF9C6 /* Date+.swift in Sources */,
 				F8D491372804BF5000DEF9C6 /* Entry.swift in Sources */,
+				F8D491482804F12300DEF9C6 /* UIViewController+.swift in Sources */,
 				F8D4913C2804C93600DEF9C6 /* EntryError.swift in Sources */,
 				F8D491232804BE9F00DEF9C6 /* EntryListViewController.swift in Sources */,
 				F8D4913E2804CAC000DEF9C6 /* CloudOperation.swift in Sources */,
@@ -365,7 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JournalByCloudKit/JournalByCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 37H8X6K6NN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JournalByCloudKit/Resources/Info.plist;
@@ -394,7 +398,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = JournalByCloudKit/JournalByCloudKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 37H8X6K6NN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JournalByCloudKit/Resources/Info.plist;
